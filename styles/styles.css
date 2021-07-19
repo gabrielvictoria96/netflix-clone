@@ -3,8 +3,7 @@
 
 .container {
    width: 100vw;
-   min-height: 100vh;
-   height: 100%;
+   height: auto;
    background-color: var(--color-black);
    position: relative;
 }
@@ -12,7 +11,6 @@
 header {
    width: 100%;
    height: 90vh;
-   background: transparent;
 }
 
 nav {
@@ -24,6 +22,7 @@ nav {
    justify-content: space-between;
    align-items: center;
    position: relative;
+   background-color: var(--color-black);
 }
 
 nav .left {
@@ -113,7 +112,7 @@ nav .user a img {
 
 .featured--content {
    width: 636px;
-   height: 392px;
+   height: auto;
    margin-left: 60px;
 }
 .featured--title {
@@ -133,6 +132,7 @@ nav .user a img {
    width: 100%;
    display: flex;
    margin-top: 15px;
+
    
 }
 
@@ -201,4 +201,85 @@ nav .user a img {
 .primary--btn:hover,
 .secondary--btn:hover {
    opacity: .5;
+}
+
+.movies {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-top: -150px;
+
+}
+
+.movie--row {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content:left;
+   padding: 0 0 0 60px;
+   position: relative;
+}
+
+.movie--row h2 { 
+   color: #fff;
+   font-size: 1.625rem;
+   margin-bottom: 10px;
+}
+
+.movie--line {
+   width: 9999px;
+   height: 500px;
+   display: flex;
+   
+}
+
+.movie--wrapper {
+   width: 285px;
+   height: 460px;
+   transform: scale(0.98);
+   cursor: pointer;
+   transition: transform .2s ease-in;
+   
+}
+
+.movie--wrapper:hover {
+   transform: scale(1.01);
+}
+
+.movie--wrapper img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+footer {
+   width: 100%;
+   height: 90px;
+}
+
+.footer--text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   margin-top: 10px;
+}
+
+.footer--text h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.footer--text span {
+   color: red;
+   font-size: 26px;
+}
+
+.footer--text p{
+   font-size: 1.1rem;
+   opacity: .6;
 }
